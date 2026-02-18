@@ -1,0 +1,2065 @@
+/* Google Font Import - Figtree */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Figtree", sans-serif;
+    background-color: white;
+    color: #131313;
+}
+
+/* navbar */
+.navbar-main-container {
+    min-height: 140px;
+    background-image: url('../images/navbar-bg.svg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    box-shadow: 0 8px 12px rgba(17, 23, 111, 0.2);
+}
+
+/* Left Section Styling */
+.navbar-logo-img {
+    height: 75px;
+    margin-right: 18px;
+    object-fit: contain;
+}
+
+.navbar-brand-text-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navbar-brand-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.navbar-brand-subtitle {
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+/* Equal Styling for Center and Right Links */
+.navbar-links-wrapper,
+.navbar-auth-group {
+    display: flex;
+    gap: 40px;
+}
+
+.navbar-nav-link {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding-bottom: 5px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* Active and Hover Line Logic (Now applies to Login/Signup too) */
+.navbar-nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav-link:hover::after,
+.navbar-nav-link.active::after {
+    width: 100%;
+}
+
+/* Right Section Divider */
+.navbar-vertical-divider {
+    font-size: 1.5rem;
+    font-weight: 400;
+    opacity: 0.6;
+    margin: 0 -10px;
+}
+
+/* Hamburger Icon - hidden the desktop */
+.navbar-mobile-icon {
+    display: none;
+    cursor: pointer;
+    color: white;
+}
+
+/* home page hero section */
+/* Hero section main container with light mint background */
+.hero-main-wrapper {
+    background-color: #F7FFF8;
+    padding: 80px 0;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.hero-left-content {
+    padding-right: 20px;
+}
+
+.hero-title {
+    color: #11176f;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.hero-description {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 35px;
+    max-width: 500px;
+}
+
+/* Button Styling with theme blue */
+.hero-btn-link {
+    display: inline-block;
+    background-color: #11176f;
+    color: white !important;
+    padding: 12px 35px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    border: none;
+}
+
+.hero-btn-link:hover {
+    background-color: #0d1256;
+    transform: translateY(-2px);
+}
+
+/* Right Side Image Styles */
+.hero-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.hero-main-img {
+    width: 80%;
+    max-width: 450px;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
+}
+
+/* home page generate invoice cta section */
+.cta-section-wrapper {
+    padding: 60px 0;
+    width: 100%;
+}
+
+/* The Main Box with Solid + and Text */
+.cta-invoice-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #11176F;
+    padding: 15px 40px;
+    text-decoration: none;
+    color: #11176F;
+    background-color: white;
+    transition: all 0.3s ease;
+    max-width: fit-content;
+}
+
+.cta-invoice-box:hover {
+    background-color: #11176F;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(17, 23, 111, 0.15);
+    color: white;
+}
+
+.cta-icon-wrapper {
+    display: flex;
+    align-items: center;
+    color: #11176F;
+    transition: color 0.3s ease;
+}
+
+.cta-invoice-box:hover .cta-icon-wrapper {
+    color: white;
+}
+
+/* Vertical line inside the box */
+.cta-divider {
+    width: 2.5px;
+    height: 45px;
+    background-color: #11176F;
+    margin: 0 25px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-invoice-box:hover .cta-divider {
+    background-color: white;
+}
+
+.cta-text {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.1;
+    text-align: left;
+    max-width: 170px;
+}
+
+/* Content below the box */
+.cta-content-group {
+    margin-top: 45px;
+}
+
+.cta-description,
+.cta-sub-description {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+/* home page features section */
+.features-section-wrapper {
+    padding: 80px 0;
+    background-color: #F6FFF7;
+    width: 100%;
+}
+
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.feature-icon-container {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-main-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.feature-card-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.feature-card-description {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5;
+    max-width: 300px;
+}
+
+/* login page and signup page */
+.login-page-container {
+    min-height: 100vh;
+    width: 100%;
+    background: radial-gradient(ellipse 150% 80% at -10% 70%, #F0FFF4 0%, #F0FFF4 75%, #ffffff 75.2%, #ffffff 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow-x: hidden;
+    padding: 30px 0;
+}
+
+.login-main-content {
+    position: relative;
+    z-index: 5;
+}
+
+/* Header Logo Area */
+.login-header-row {
+    margin: 20px 0 50px 0;
+}
+
+.login-main-logo {
+    width: 95px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.login-company-name {
+    color: #11176F;
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.login-app-subtitle {
+    color: #11176F;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Form Card Style */
+.login-form-card {
+    background: white;
+    border: 2px solid #11176F;
+    padding: 80px 40px;
+    box-shadow: 0 10px 30px rgba(17, 23, 111, 0.08);
+    position: relative;
+}
+
+.login-welcome-title {
+    color: #11176F;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.login-welcome-subtitle {
+    color: #11176F;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+/* Inputs */
+.login-input-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1.5px solid #11176F;
+    margin-bottom: 20px;
+    padding: 12px 15px;
+}
+
+.login-field-icon {
+    margin-right: 12px;
+}
+
+.login-input-control {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.login-password-toggle {
+    cursor: pointer;
+}
+
+/* Checkbox & Button */
+.login-options-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Custom Remember Me */
+.login-remember-me {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.login-remember-me input {
+    display: none;
+}
+
+.custom-checkbox {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    margin-right: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.login-remember-me input:checked+.custom-checkbox::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-forgot-text {
+    cursor: pointer;
+}
+
+.login-action-btn {
+    width: 100%;
+    background-color: #11176F;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.login-action-btn:hover,
+.login-signup-button:hover {
+    background-color: #0b0f4d;
+}
+
+/* Right Illustration */
+.login-side-feature-img {
+    width: 90%;
+    height: auto;
+    padding-left: 10%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Bottom Signup Link */
+.login-footer-redirect {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.login-signup-button {
+    background-color: #11176F;
+    color: white !important;
+    padding: 6px 25px;
+    text-decoration: none;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+/* Cancel Button specifically for Signup Page */
+.signup-cancel-btn {
+    width: 100%;
+    background-color: #EDFFEF;
+    color: #11176F;
+    border: 1.5px solid #11176F;
+    padding: 12px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.signup-cancel-btn:hover {
+    background-color: #bad8be;
+}
+
+.signup-welcome-subtitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* Error message text style */
+.error-text-msg {
+    color: #ff0000;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: block;
+    margin-top: -15px;
+    margin-bottom: 15px;
+    padding-left: 5px;
+}
+
+/* Border color change when error occurs */
+.input-error-border {
+    border-color: #ff0000 !important;
+}
+
+/* client page header section */
+.cl-page-container {
+    min-height: 100vh;
+}
+
+.cl-table-bg-wrapper {
+    background-color: #F5FFF7;
+    width: 100%;
+    flex-grow: 1;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+/* Title Styling */
+.cl-title {
+    color: #11176F;
+    font-weight: 800;
+    font-size: 2.4rem;
+    margin: 0;
+}
+
+/* Header Actions Wrapper */
+.cl-header-actions {
+    gap: 15px;
+}
+
+/* Search Bar Wrapper */
+.cl-search-wrapper {
+    position: relative;
+    width: 250px;
+}
+
+.cl-search-input {
+    width: 100%;
+    padding: 10px 15px 10px 15px;
+    border: 1.5px solid #11176F;
+    border-radius: 4px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.cl-search-input::placeholder {
+    color: #B8B8B8;
+}
+
+.cl-search-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #B8B8B8;
+    font-size: 1.1rem;
+}
+
+/* New Client Button */
+.cl-add-btn {
+    background-color: #11176F;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1.1rem;
+}
+
+.cl-add-btn:hover {
+    background-color: #0d1259;
+    box-shadow: 0 4px 8px rgba(17, 23, 111, 0.2);
+}
+
+/* Plus Icon */
+.cl-btn-icon {
+    font-size: 1.1rem;
+    color: #FFF;
+}
+
+.ct-no-data-msg {
+    text-align: center;
+    padding: 60px 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* client page client table section */
+/* Table container - white background and centered */
+.ct-table-responsive {
+    background-color: #ffffff;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.ct-main-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ct-main-table th {
+    text-align: left;
+    padding: 15px 10px;
+    border-bottom: 1.5px solid #B8B8B8;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.ct-tr-row {
+    border-bottom: 1px solid #B8B8B8;
+    transition: 0.2s;
+}
+
+.ct-tr-row:hover {
+    background-color: #EDFFEF;
+}
+
+.ct-td-name,
+.ct-td-email,
+.ct-td-billed,
+.ct-td-received,
+.ct-td-status,
+.ct-td-action {
+    padding: 18px 10px;
+    vertical-align: middle;
+}
+
+.ct-client-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.ct-name-text,
+.ct-td-email,
+.ct-td-billed,
+.ct-td-received {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.ct-invoice-count {
+    font-size: 0.89rem;
+}
+
+/* Status Text Only Styles */
+.status-badge {
+    font-size: 1rem;
+    font-weight: 700;
+    display: inline-block;
+    min-width: 110px;
+    text-align: left;
+}
+
+/* Red Text for Unpaid */
+.badge-unpaid {
+    color: #FF4D4D;
+    background-color: transparent;
+    border: none;
+}
+
+/* Orange Text for Partial */
+.badge-partial {
+    color: #F57C00;
+    background-color: transparent;
+    border: none;
+}
+
+/* Green Text for Paid */
+.badge-paid {
+    color: #2E7D32;
+    background-color: transparent;
+    border: none;
+}
+
+/* Menu Actions */
+.ct-menu-container {
+    position: relative;
+    display: inline-block;
+}
+
+.ct-icon-menu {
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 5px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.ct-icon-menu:hover {
+    background-color: #f0f0f0;
+    color: #11176F;
+}
+
+.ct-menu-list {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    z-index: 100;
+    min-width: 160px;
+    overflow: hidden;
+}
+
+.ct-menu-item {
+    padding: 12px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+
+.ct-menu-item:hover {
+    background-color: #f5f8ff;
+    color: #11176F;
+}
+
+.ct-item-delete {
+    color: #ff4d4d;
+}
+
+.ct-item-delete:hover {
+    background-color: #fff5f5;
+    color: #ff0000;
+}
+
+.ct-auto-save-text {
+    color: #11176F;
+    font-weight: 600;
+    margin-top: 25px;
+    font-size: 1.2rem;
+}
+
+/* invoice generator page */
+.ig-page-wrapper {
+    background: linear-gradient(to bottom, #EFFFF4 300px, #ffffff 300px);
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* Padding for the top bar area */
+.ig-top-bar {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+/* The Dark Blue Title Box */
+.ig-title-badge {
+    background-color: #11176F;
+    color: #FFFFFF;
+    padding: 10px 40px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border-radius: 2px;
+    display: inline-block;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.ig-form-container {
+    margin-top: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.ig-white-card {
+    background-color: #ffffff;
+    border: 4px solid #B8B8B8;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    padding: 40px;
+    min-height: 800px;
+}
+
+/* invoice generator page invoice header section */
+.ih-wrapper {
+    padding-bottom: 10px;
+}
+
+/* Logo Upload Section */
+.ih-logo-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+/* Logo box and button */
+.ih-logo-container {
+    position: relative;
+    display: inline-block;
+}
+
+.ih-logo-box {
+    width: 100px;
+    height: 100px;
+    background-color: #11176f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/* Style for the custom upload image icon */
+.ih-upload-img-icon {
+    width: 40px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Ensure image preview doesn't hide the button */
+.ih-preview-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Close Button Style */
+.ih-remove-btn {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    z-index: 10;
+    transition: transform 0.2s ease;
+}
+
+.ih-remove-btn:hover {
+    background-color: #ff0000;
+    transform: scale(1.1);
+}
+
+.ih-logo-title {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.ih-logo-size {
+    margin: 5px 0 0 0;
+    font-size: 0.96rem;
+}
+
+/* Company Input Fields */
+.ih-company-inputs {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.ih-input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #B8B8B8;
+    background-color: #F7FFF8;
+    font-size: 1rem;
+    outline: none;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.ih-input::placeholder {
+    color: #000;
+}
+
+/* Focus Style */
+.ih-input:focus {
+    border-color: #11176f;
+    box-shadow: 0 0 5px rgba(17, 23, 111, 0.1);
+}
+
+/* Right Side Title */
+.ih-main-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #11176f;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+/* Bottom Divider */
+.ih-divider {
+    margin-top: 30px;
+    border: 0;
+    border-top: 2px solid #B8B8B8;
+}
+
+/* Input field wrapper */
+.ih-field-group {
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+/* Error Text Style */
+.error-text {
+    color: #ff0000;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-top: 4px;
+    display: block;
+    text-align: left;
+}
+
+/* Error Border Style */
+.error-border {
+    border: 1px solid #ff0000 !important;
+    background-color: #fff8f8;
+}
+
+/* invoice generator page invoice bill to section */
+.ibt-wrapper {
+    padding: 10px 0;
+}
+
+/* Section Title (Bill To:) */
+.ibt-section-title {
+    color: #11176f;
+    font-weight: 700;
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+}
+
+/* Left Side Inputs Spacing */
+.ibt-client-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+}
+
+/* Right Side Meta Container */
+.ibt-meta-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 40px;
+}
+
+/* Individual Meta Row */
+.ibt-meta-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.ibt-label {
+    font-weight: 600;
+    min-width: 120px;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.ibt-separator {
+    font-weight: bold;
+}
+
+/* Meta Input size */
+.ibt-meta-input {
+    width: 200px !important;
+}
+
+/* Date Wrapper for Left Icon */
+.ibt-date-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Hide browser default indicator */
+.ibt-date-field-left::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+/* Custom Calendar Icon */
+.ibt-custom-calendar-icon-left {
+    position: absolute;
+    left: 10px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+/* Padding adjustment for input text to not overlap with left icon */
+.ibt-date-field-left {
+    padding-left: 35px !important;
+}
+
+.ibt-meta-row-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 100%;
+    align-items: flex-end;
+}
+
+/* invoice generator page invoice table section */
+.it-wrapper {
+    margin-top: 10px;
+}
+
+.it-table-container {
+    border: 1px solid #B8B8B8;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.it-header-row {
+    background-color: #11176f;
+    color: white;
+}
+
+.it-header-col {
+    padding: 12px 15px;
+    font-weight: 700;
+    font-size: 1.3rem;
+    border-right: 1px solid #B8B8B8;
+}
+
+.it-header-col:last-child {
+    border-right: none;
+}
+
+.it-body-row {
+    border-bottom: 1px solid #B8B8B8;
+    background-color: #F7FFF8;
+    position: relative;
+}
+
+.it-body-row:last-child {
+    border-bottom: none;
+}
+
+.it-body-col {
+    padding: 15px;
+    border-right: 1px solid #B8B8B8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.it-body-col:last-child {
+    border-right: none;
+}
+
+.it-main-input {
+    border: none;
+    background: transparent;
+    font-size: 1.3rem;
+    font-weight: 600;
+    outline: none;
+    width: 100%;
+    color: #131313;
+}
+
+.it-sub-input {
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    outline: none;
+    resize: none;
+    width: 100%;
+    margin-top: 5px;
+    color: #131313;
+}
+
+.it-number-input {
+    border: none;
+    background: transparent;
+    font-size: 1.1rem;
+    outline: none;
+    width: 100%;
+}
+
+.it-currency-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Updated Add Button and Icon */
+.it-add-btn {
+    background: none;
+    border: none;
+    color: #11176f;
+    font-weight: 700;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    padding: 5px 0;
+}
+
+.it-plus-icon {
+    font-size: 1.4rem;
+    color: #11176f;
+}
+
+.it-amount-cell {
+    position: relative;
+    font-size: 1.1rem;
+}
+
+.it-remove-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    color: #ff4d4d;
+    font-size: 1.3rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.it-total-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 30px;
+    gap: 15px;
+}
+
+.it-total-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.it-total-label {
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+
+.it-total-box {
+    width: 180px;
+    background-color: #F7FFF8;
+    border: 1px solid #B8B8B8;
+    padding: 8px 15px;
+    text-align: right;
+    font-weight: 700;
+}
+
+.total1 {
+    color: #11176F;
+}
+
+.it-dark-box {
+    background-color: #11176f;
+    color: white;
+    border-color: #11176f;
+}
+
+/* invoice generator page additional info section */
+.ai-container {
+    padding: 10px 0;
+}
+
+/* Heading */
+.ai-heading {
+    display: block;
+    color: #11176f;
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+/* Text Box Design */
+.ai-text-box {
+    width: 100%;
+    max-width: 450px;
+    min-height: 45px;
+    padding: 5px 15px;
+    border: 2px solid #B8B8B8;
+    background-color: #F7FFF8;
+    color: #131313;
+    font-size: 1.3rem;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+}
+
+/* invoice generator page payment info section */
+/* Main Container */
+.pi-container {
+    padding: 10px 0;
+}
+
+/* Toggle Header Styling */
+.pi-toggle-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    color: #11176f;
+    padding: 5px 0;
+    transition: 0.2s;
+}
+
+.pi-icon {
+    font-size: 1.3rem;
+}
+
+.pi-toggle-text {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+/* Content Area */
+.pi-content {
+    margin-top: 15px;
+    padding-left: 35px;
+}
+
+/* Input Row Layout */
+.pi-input-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.pi-input-label {
+    width: 180px;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.pi-field {
+    flex: 1;
+    max-width: 400px;
+    border: 1px solid #B8B8B8;
+    background-color: #F7FFF8;
+    padding: 8px 12px;
+    font-size: 1.1rem;
+    outline: none;
+    color: #131313;
+}
+
+/* QR Upload Styling */
+.pi-upload-section {
+    margin-top: 25px;
+}
+
+.pi-qr-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.pi-upload-box {
+    width: 100px;
+    height: 100px;
+    background-color: #F7FFF8;
+    border: 1px solid #B8B8B8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+/* Custom Image Icon */
+.pi-custom-upload-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    filter: brightness(0);
+}
+
+.pi-preview-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.pi-qr-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid #B8B8B8;
+}
+
+.pi-close-btn {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.pi-upload-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.pi-upload-title {
+    color: #11176f;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin: 0;
+    line-height: 1.4;
+    max-width: 300px;
+}
+
+.pi-upload-size {
+    margin-top: 5px;
+    font-size: 1.1rem;
+}
+
+/* Animation */
+.animate-fade {
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.pi-error-margin {
+    margin-left: 180px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+/* invoice generator page customize your invoice section */
+.cyi-container {
+    padding: 10px 0;
+}
+
+/* Label Width Adjustment */
+.cyi-label-width {
+    width: 320px !important;
+}
+
+/* Row alignment */
+.cyi-input-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Radio buttons */
+.cyi-radio-group {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.cyi-radio-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.cyi-radio-input {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #11176f;
+}
+
+/* Color input wrapper */
+.cyi-color-field-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-width: 250px;
+    flex: 1;
+}
+
+/* Multi-color wheel logic */
+.cyi-color-picker {
+    position: absolute;
+    right: 12px;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.cyi-color-picker::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+/* Creating the rainbow circle effect */
+.cyi-color-picker::-webkit-color-swatch {
+    border: none;
+    border-radius: 50%;
+    background: conic-gradient(red, orange, yellow, green, blue, indigo, violet, red);
+}
+
+/* invoice generator page */
+/* Final Action Buttons Container */
+.ig-action-section {
+    padding: 10px 0;
+}
+
+/* Common button base styles */
+.ig-btn-preview,
+.ig-btn-generate {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.8rem;
+    padding: 10px 40px;
+    border-radius: 2px;
+    transition: 0.3s all ease;
+    min-width: 180px;
+}
+
+/* Preview Button - Outline Style */
+.ig-btn-preview {
+    background-color: transparent;
+    color: #11176f;
+    border: 2px solid #11176f;
+}
+
+.ig-btn-preview:hover {
+    background-color: #f0f2ff;
+    color: #11176f;
+}
+
+/* Generate Button */
+.ig-btn-generate {
+    background-color: #11176f;
+    color: #ffffff;
+    border: 2px solid #11176f;
+}
+
+.ig-btn-generate:hover {
+    background-color: #0a0e4d;
+    border-color: #0a0e4d;
+    color: #ffffff;
+}
+
+/* invoice preview page */
+/* Main Generator Page Blur */
+.ig-blur {
+    filter: blur(10px);
+    pointer-events: none;
+    user-select: none;
+}
+
+/* Overlay Wrapper - Fixed but scrollable */
+.ip-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: transparent;
+    z-index: 2000;
+    overflow-y: auto;
+    display: block;
+}
+
+/* Close Button */
+.ip-close-btn {
+    position: fixed;
+    top: 180px;
+    right: 80px;
+    background-color: white;
+    border: 2px solid #11176f;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 2100;
+}
+
+/* Invoice Card Container */
+.ip-modal-container {
+    max-width: 850px;
+    width: 95%;
+    margin: 180px auto 50px auto;
+}
+
+/* Slide Down Animation */
+.ip-slide-down {
+    animation: slideInFromTop 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.ip-card {
+    background-color: white;
+    min-height: 1000px;
+    border-radius: 8px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    border: 2px solid #11176F;
+    overflow: hidden;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* invoice preview page Preview Header Section */
+.ph-blue-header {
+    background-color: #11176f;
+    padding: 30px 25px 35px 25px;
+    position: relative;
+    color: #fff;
+}
+
+.ph-green-divider {
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #5ACC45;
+}
+
+.ph-logo-bg {
+    width: 95px;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ph-main-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.ph-company-name {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 0 0 5px 0;
+}
+
+.ph-company-addr {
+    font-size: 1.1rem;
+    margin: 0;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.ph-title-container {
+    transform: translateY(-30px);
+}
+
+.ph-title {
+    font-size: 2.1em;
+    font-weight: 800;
+    margin: 0;
+}
+
+/* invoice preview page preview invoice to section */
+/* Container Wrapper */
+.pit-wrapper {
+    padding: 35px 45px;
+}
+
+/* Left Side - Invoice To Section */
+.pit-label-title {
+    color: #11176f;
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin-bottom: 18px;
+}
+
+.pit-client-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.pit-text {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+/* Right Side - Meta Data Section */
+.pit-meta-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 45px;
+}
+
+.pit-meta-item {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.pit-meta-label {
+    min-width: 130px;
+}
+
+.pit-meta-separator {
+    width: 25px;
+    text-align: center;
+}
+
+/* invoice preview page preview table section */
+.pt-section-wrapper {
+    padding: 0 0 20px 0;
+}
+
+.pt-custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #d1d5db;
+    border-bottom: 1px solid #d1d5db;
+}
+
+.pt-head-bg {
+    background-color: #11176f;
+}
+
+.pt-head-bg th {
+    color: #ffffff;
+    padding: 12px 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: 1px solid #ffffff44;
+}
+
+.pt-text-left {
+    text-align: left;
+    padding-left: 45px !important;
+}
+
+.pt-text-center {
+    text-align: center;
+}
+
+.pt-row-odd {
+    background-color: #ffffff;
+}
+
+.pt-row-even {
+    background-color: #f1f8f5;
+}
+
+.pt-custom-table td {
+    padding: 12px 15px;
+    border: 1px solid #d1d5db;
+    vertical-align: middle;
+}
+
+.pt-item-title {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.pt-item-subtitle {
+    font-size: 0.95rem;
+}
+
+.pt-val {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* Total Section Right Alignment */
+.pt-total-flex-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
+    padding-right: 0px;
+}
+
+.pt-total-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.pt-total-row {
+    display: flex;
+    align-items: center;
+}
+
+.pt-total-label-text {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #11176f;
+    padding-right: 30px;
+}
+
+.pt-total-amount-box {
+    background-color: #11176f;
+    color: #ffffff;
+    padding: 10px 60px;
+    min-width: 200px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+/* Red Tax Text Styling */
+.pt-tax-text {
+    color: #ff0000;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 8px;
+    padding-right: 15px;
+    text-transform: uppercase;
+}
+
+/* invoice preview page notes section */
+.pt-notes-display {
+    padding: 0 45px;
+}
+
+.pt-notes-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* invoice preview page preview footer section payment info */
+.pv-footer-wrapper {
+    padding: 10px 45px 30px 45px;
+}
+
+/* Payment Info Title */
+.pv-payment-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #11176f;
+    text-decoration: underline;
+    margin-bottom: 12px;
+}
+
+/* Flex grid for labels and values */
+.pv-info-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.pv-info-item {
+    display: flex;
+    align-items: center;
+}
+
+.pv-label {
+    width: 150px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.pv-sep {
+    padding: 0 10px;
+    font-weight: 600;
+}
+
+.pv-value {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* invoice preview page preview footer section signature section */
+.pv-signature-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding-top: 30px;
+}
+
+.pv-ack-text {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #11176f;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.pv-sign-line {
+    width: 80%;
+    height: 1.5px;
+    background-color: #11176f;
+    margin-bottom: 20px;
+}
+
+.pv-auth-section {
+    text-align: center;
+}
+
+.pv-auth-label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.pv-auth-details {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #11176f;
+}
+
+.pv-company-name {
+    font-weight: 800;
+}
+
+/* invoice preview page preview footer section qr code section */
+.pv-qr-section {
+    margin-top: 20px;
+}
+
+.pv-qr-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #11176f;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.pv-qr-box {
+    width: 120px;
+    height: 120px;
+    padding: 5px;
+}
+
+.pv-qr-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Terms & Conditions Styling */
+.pv-terms-section {
+    margin-top: 25px;
+}
+
+.pv-terms-head {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #11176f;
+    text-transform: uppercase;
+}
+
+.pv-terms-text {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-top: 2px;
+}
+
+/* Bottom Green Bar Styling */
+.ip-bottom-bar {
+    width: 100%;
+    height: 15px;
+    background-color: #61CC4D;
+    margin-top: auto;
+}
+
+/* invoice preview page preview grand design section*/
+/* Card Wrapper for Grand */
+.grand-flex {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+/* External Design */
+.ip-external-design {
+    width: 45px;
+    display: flex;
+    margin-right: -1px;
+    z-index: 10;
+}
+
+.ip-pattern-img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    display: block;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+/* Grand Card */
+.ip-grand-card {
+    border-left: none !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+/* client invoice page */
+/* Page Wrapper with Top Blue BG and Shadow */
+.success-view-layout {
+    background: linear-gradient(to bottom, #EFFFF4 300px, #ffffff 300px) !important;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 80px;
+}
+
+.success-view-layout::before {
+    content: '';
+    position: absolute;
+    top: 300px;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: transparent;
+    box-shadow: 0 -15px 25px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+/* Action Buttons Styling */
+.ci-action-btn {
+    background-color: #ffff;
+    border: 2px solid #11176F;
+    padding: 8px 25px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: #11176F;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    min-width: 150px;
+    z-index: 2;
+    position: relative;
+}
+
+.ci-action-btn:hover {
+    background-color: #f0f2ff;
+    transform: translateY(-1px);
+}
+
+.ci-btn-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+/* White Paper Card Base */
+.ci-white-paper-card {
+    background-color: white;
+    max-width: 850px;
+    position: relative;
+    z-index: 5;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    border: 2px solid #11176F;
+    border-radius: 5px;
+}
+
+/* Grand Design Logic */
+.grand-flex {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: stretch !important;
+    gap: 0 !important;
+    width: 100%;
+}
+
+.ci-external-design {
+    width: 45px !important;
+    display: flex !important;
+    margin-right: -2px !important;
+    z-index: 10 !important;
+    position: relative;
+}
+
+.ci-pattern-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: fill !important;
+    display: block !important;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.ci-grand-card {
+    border-left: none !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    margin-left: 0 !important;
+}
+

@@ -1,0 +1,1679 @@
+/* home page mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+
+    /* navbar */
+    .navbar-main-container {
+        min-height: 100px;
+    }
+
+    .navbar-mobile-icon {
+        display: block;
+    }
+
+    .navbar-logo-img {
+        height: 50px;
+    }
+
+    .navbar-brand-title {
+        font-size: 1.1rem;
+    }
+
+    .navbar-brand-subtitle {
+        font-size: 0.9rem;
+    }
+
+    /* Mobile Menu Drawer */
+    .navbar-menu-wrapper {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #11176F;
+        padding: 40px 0;
+        display: none;
+        flex-direction: column;
+        z-index: 999;
+    }
+
+    .navbar-menu-wrapper.active {
+        display: flex;
+    }
+
+    .navbar-links-wrapper,
+    .navbar-auth-group {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .navbar-nav-link {
+        font-size: 1.3rem;
+    }
+
+    /* hero section */
+    .hero-main-wrapper {
+        padding: 40px 0;
+        min-height: 400px;
+        text-align: center;
+    }
+
+    .hero-left-content {
+        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    .hero-description {
+        font-size: 1.1rem;
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .hero-btn-link {
+        font-size: 1.1rem;
+        padding: 10px 25px;
+    }
+
+    /* Right side image hide */
+    .hero-image-container {
+        display: none !important;
+    }
+
+    /* generate invoice cta section */
+    .cta-description,
+    .cta-sub-description {
+        font-size: 1.2rem;
+    }
+
+    .cta-text {
+        font-size: 1.2rem;
+        max-width: 130px;
+    }
+
+    .cta-invoice-box {
+        padding: 12px 25px;
+    }
+
+    .cta-divider {
+        height: 35px;
+        margin: 0 15px;
+    }
+
+    /* features section */
+    .features-section-wrapper {
+        padding: 40px 0;
+    }
+
+    .feature-card {
+        padding: 10px;
+        margin-bottom: 40px;
+    }
+
+    .feature-icon-container {
+        width: 65px;
+        height: 65px;
+        margin-bottom: 15px;
+    }
+
+    .feature-card-title {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+    }
+
+    .feature-card-description {
+        font-size: 1.1rem;
+        max-width: 100%;
+        padding: 0 15px;
+    }
+}
+
+/* home page tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    /* navbar */
+    .navbar-main-container {
+        min-height: 120px;
+        padding: 5px 0;
+    }
+
+    .container-fluid {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+
+    .navbar-logo-img {
+        height: 60px;
+        margin-right: 12px;
+    }
+
+    .navbar-brand-title {
+        font-size: 1.2rem;
+    }
+
+    .navbar-brand-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .navbar-links-wrapper,
+    .navbar-auth-group {
+        gap: 25px;
+    }
+
+    .navbar-nav-link {
+        font-size: 1.1rem;
+    }
+
+    .navbar-vertical-divider {
+        font-size: 1.2rem;
+    }
+
+    /* hero section */
+    .hero-main-wrapper {
+        padding: 60px 0;
+        min-height: 450px;
+    }
+
+    .hero-left-content {
+        padding-right: 15px;
+        text-align: left;
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-description {
+        font-size: 1.2rem;
+        max-width: 100%;
+    }
+
+    .hero-image-container {
+        display: flex !important;
+        justify-content: center;
+    }
+
+    .hero-main-img {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    /* generate invoice cta section */
+    .cta-section-wrapper {
+        padding: 50px 0;
+    }
+
+    .cta-invoice-box {
+        padding: 12px 30px;
+    }
+
+    .cta-divider {
+        height: 40px;
+        margin: 0 20px;
+    }
+
+    .cta-text {
+        font-size: 1.4rem;
+        max-width: 150px;
+    }
+
+    .cta-content-group {
+        margin-top: 35px;
+    }
+
+    .cta-description,
+    .cta-sub-description {
+        font-size: 1.4rem;
+    }
+
+    /* features section */
+    .features-section-wrapper {
+        padding: 60px 0;
+    }
+
+    .feature-card {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .feature-icon-container {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 20px;
+    }
+
+    .feature-card-title {
+        font-size: 1.4rem;
+        margin-bottom: 12px;
+    }
+
+    .feature-card-description {
+        font-size: 1.1rem;
+        line-height: 1.4;
+        max-width: 100%;
+    }
+}
+
+/* home page laptop */
+@media (min-width: 1024px) and (max-width: 1300px) {
+
+    /* features section */
+    .features-section-wrapper {
+        padding: 70px 0;
+    }
+
+    .feature-card {
+        padding: 20px;
+    }
+
+    .feature-icon-container {
+        width: 75px;
+        height: 75px;
+        margin-bottom: 22px;
+    }
+
+    .feature-card-title {
+        font-size: 1.5rem;
+        margin-bottom: 14px;
+    }
+
+    .feature-card-description {
+        font-size: 1.15rem;
+        line-height: 1.45;
+        max-width: 280px;
+    }
+}
+
+/* login and signup page mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+
+    /* Background curve */
+    .login-page-container::before {
+        background: radial-gradient(ellipse 150% 80% at 50% 100%, #F0FFF4 0%, #F0FFF4 60%, transparent 60.2%);
+        transform: rotate(0deg);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Hide the Right side image */
+    .login-side-feature-img {
+        display: none !important;
+    }
+
+    /* center the logo and header */
+    .login-logo-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .login-main-logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    /* Form card */
+    .login-form-card {
+        padding: 40px 20px;
+        margin: 0 15px;
+    }
+
+    /* Welcome text size */
+    .login-welcome-title,
+    .login-welcome-subtitle {
+        font-size: 1.5rem;
+    }
+
+    /* Footer signup link */
+    .login-footer-redirect {
+        font-size: 1.1rem;
+        padding: 0 10px;
+    }
+
+    .login-signup-button {
+        margin-top: 10px;
+        display: inline-block;
+    }
+}
+
+/* login and signup page tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .login-page-container {
+        padding: 30px 0;
+    }
+
+    .row.align-items-center {
+        flex-direction: row !important;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    /* Form card */
+    .col-md-6 {
+        width: 50% !important;
+    }
+
+    .login-form-card {
+        padding: 50px 25px;
+        margin: 0 10px;
+    }
+
+    /* Welcome text sizes */
+    .login-welcome-title,
+    .login-welcome-subtitle {
+        font-size: 1.4rem;
+    }
+
+    /* Illustration Image */
+    .login-side-feature-img {
+        width: 100%;
+        padding-left: 5%;
+        margin: 0 auto;
+    }
+
+    /* Logo section size */
+    .login-main-logo {
+        width: 70px;
+    }
+
+    .login-company-name {
+        font-size: 1.5rem;
+    }
+
+    .login-app-subtitle {
+        font-size: 1.1rem;
+    }
+
+    /* Bottom Signup footer text */
+    .login-footer-redirect {
+        font-size: 1.1rem;
+    }
+}
+
+/* client page mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+
+    /* header section */
+    .cl-header-actions {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 15px;
+    }
+
+    .cl-search-wrapper {
+        width: 100%;
+    }
+
+    .cl-add-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* client table section */
+    /* Table container */
+    .ct-table-responsive {
+        padding: 10px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+
+    .ct-main-table {
+        min-width: 700px;
+    }
+
+    /* Text sizes */
+    .ct-main-table th {
+        font-size: 1rem;
+        padding: 12px 8px;
+    }
+
+    .ct-td-name,
+    .ct-td-email,
+    .ct-td-billed,
+    .ct-td-received,
+    .ct-td-status {
+        padding: 12px 8px;
+        font-size: 0.95rem;
+    }
+
+    .ct-name-text {
+        font-size: 1rem;
+    }
+
+    /* Status badge */
+    .status-badge {
+        font-size: 0.85rem;
+        min-width: 90px;
+    }
+
+    /* Auto save text alignment */
+    .ct-auto-save-text {
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    /* Menu Actions (Three dots dropdown) adjustment */
+    .ct-menu-list {
+        min-width: 140px;
+        position: fixed;
+        right: 20px;
+    }
+}
+
+/* client page tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    /* client header section */
+    .cl-header-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    /* Title size */
+    .cl-title {
+        font-size: 1.8rem;
+    }
+
+    /* Search bar and Button align-ment */
+    .cl-header-actions {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: nowrap;
+    }
+
+    /* Search bar */
+    .cl-search-wrapper {
+        width: 200px;
+    }
+
+    .cl-search-input {
+        padding: 8px 12px;
+        font-size: 0.95rem;
+    }
+
+    /* New Client Button adjustments */
+    .cl-add-btn {
+        padding: 8px 15px;
+        font-size: 1rem;
+        white-space: nowrap;
+    }
+
+    /* client table section */
+    /* Table container */
+    .ct-table-responsive {
+        padding: 15px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .ct-main-table {
+        min-width: 750px;
+    }
+
+    /* Header */
+    .ct-main-table th {
+        font-size: 1.1rem;
+        padding: 15px 10px;
+    }
+
+    /* Cell content adjustments */
+    .ct-td-name,
+    .ct-td-email,
+    .ct-td-billed,
+    .ct-td-received,
+    .ct-td-status {
+        padding: 15px 10px;
+        font-size: 1rem;
+    }
+
+    /* Status badge */
+    .status-badge {
+        font-size: 0.95rem;
+        min-width: 100px;
+    }
+
+    /* Menu Actions (Three dots) */
+    .ct-icon-menu {
+        font-size: 1.3rem;
+    }
+
+    /* Auto save text */
+    .ct-auto-save-text {
+        font-size: 1.1rem;
+    }
+}
+
+/* invoice generator page mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .ig-page-wrapper {
+        background: linear-gradient(to bottom, #EFFFF4 200px, #ffffff 200px);
+    }
+
+    .ig-top-bar {
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
+
+    .ig-title-badge {
+        font-size: 1.1rem;
+        padding: 8px 25px;
+        letter-spacing: 1px;
+        width: 90%;
+        text-align: center;
+    }
+
+    /* invoice header section */
+    /* Main Card adjustment */
+    .ig-white-card {
+        padding: 20px;
+        border-width: 2px;
+    }
+
+    /* INVOICE Title */
+    .ih-main-title {
+        text-align: center;
+        margin-bottom: 25px;
+        font-size: 2.2rem;
+        display: block;
+        width: 100%;
+    }
+
+    /* Logo Section */
+    .ih-logo-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .ih-logo-text {
+        width: 100%;
+    }
+
+    /* Company Inputs */
+    .ih-company-inputs {
+        max-width: 100%;
+        margin-top: 20px;
+        gap: 10px;
+    }
+
+    .ih-input {
+        text-align: center;
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+
+    /* Divider adjustment for mobile */
+    .ih-divider {
+        margin-top: 25px;
+    }
+
+    /* invoice bill to section */
+    .ibt-wrapper {
+        padding: 5px 0;
+    }
+
+    .ibt-section-title {
+        font-size: 1.4rem;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    .ibt-client-inputs {
+        max-width: 100%;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .ibt-meta-container {
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    /* Individual row adjustment for mobile */
+    .ibt-meta-row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        gap: 5px;
+    }
+
+    .ibt-label {
+        min-width: 100px;
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    .ibt-separator {
+        display: inline-block;
+        padding-right: 5px;
+    }
+
+    /* Date field and wrapper adjustment */
+    .ibt-date-input-wrapper {
+        flex: 1;
+        width: 100%;
+        position: relative;
+    }
+
+    .ibt-meta-input {
+        width: 100% !important;
+        min-width: 0;
+    }
+
+    /* Left Icon alignment */
+    .ibt-custom-calendar-icon-left {
+        left: 10px;
+        width: 16px;
+        height: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    /* Padding to avoid text overlap */
+    .ibt-date-field-left {
+        padding-left: 35px !important;
+    }
+
+    /* invoice table section */
+    .it-table-container {
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        border: 1px solid #B8B8B8;
+    }
+
+    /* Setting a minimum width for the table rows to force scroll */
+    .it-header-row,
+    .it-body-row {
+        min-width: 600px;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    /* Adjusting column padding */
+    .it-header-col,
+    .it-body-col {
+        padding: 10px 8px;
+        font-size: 0.95rem;
+    }
+
+    .it-main-input {
+        font-size: 1rem;
+    }
+
+    .it-sub-input {
+        font-size: 0.85rem;
+    }
+
+    /* Totals section alignment */
+    .it-total-container {
+        align-items: flex-end;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .it-total-box {
+        width: 140px;
+        font-size: 0.9rem;
+    }
+
+    .it-total-label {
+        font-size: 0.9rem;
+    }
+
+    /* additional info section */
+    .ai-text-box {
+        max-width: 100%;
+    }
+
+    /* payment info section */
+    .pi-content {
+        padding-left: 10px;
+    }
+
+    /* Input Row */
+    .pi-input-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .pi-input-label {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+
+    .pi-field {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Error text */
+    .pi-error-margin {
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    /* QR Upload section */
+    .pi-qr-wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .pi-upload-title {
+        max-width: 100%;
+        font-size: 1.1rem;
+    }
+
+    /* customize your voice section */
+    .cyi-input-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .cyi-label-width {
+        width: 100% !important;
+        margin-bottom: 5px;
+    }
+
+    .cyi-color-field-wrapper {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .cyi-radio-group {
+        gap: 25px;
+        margin-top: 5px;
+    }
+
+    .cyi-radio-label {
+        font-size: 1.1rem;
+    }
+
+    /* buttons */
+    .ig-action-section {
+        padding: 15px 5px;
+    }
+
+    .ig-action-section .row {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .ig-btn-preview,
+    .ig-btn-generate {
+        width: 100%;
+        max-width: 280px;
+        font-size: 1.3rem;
+        padding: 10px 15px;
+        min-width: unset;
+    }
+}
+
+/* invoice generator page tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .ig-page-wrapper {
+        background: linear-gradient(to bottom, #EFFFF4 250px, #ffffff 250px);
+    }
+
+    .ig-top-bar {
+        padding-top: 35px;
+        padding-bottom: 20px;
+    }
+
+    .ig-title-badge {
+        font-size: 1.5rem;
+        padding: 10px 35px;
+        letter-spacing: 1.5px;
+    }
+
+    /* invoice header section */
+    .ig-white-card {
+        padding: 30px;
+    }
+
+    /* INVOICE Title */
+    .ih-main-title {
+        font-size: 2.1rem;
+        letter-spacing: 1px;
+    }
+
+    /* Logo section layout */
+    .ih-logo-section {
+        gap: 15px;
+    }
+
+    .ih-logo-box {
+        width: 90px;
+        height: 90px;
+    }
+
+    .ih-logo-title {
+        font-size: 1.1rem;
+    }
+
+    /* Company Inputs */
+    .ih-company-inputs {
+        max-width: 380px;
+        gap: 12px;
+    }
+
+    .ih-input {
+        padding: 8px 10px;
+        font-size: 0.95rem;
+    }
+
+    /* Divider adjustment */
+    .ih-divider {
+        margin-top: 25px;
+    }
+
+    /* invoice bill to section */
+    .ibt-wrapper {
+        padding: 15px 0;
+    }
+
+    .ibt-section-title {
+        font-size: 1.5rem;
+        margin-bottom: 12px;
+    }
+
+    /* Left Side Inputs */
+    .ibt-client-inputs {
+        max-width: 320px;
+        gap: 12px;
+    }
+
+    /* Right Side Meta Container */
+    .ibt-meta-container {
+        padding-top: 35px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    /* Individual Meta Row */
+    .ibt-meta-row {
+        gap: 10px;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    .ibt-label {
+        min-width: 110px;
+        font-size: 1.1rem;
+        text-align: left;
+    }
+
+    /* Input box size adjustment for tablet */
+    .ibt-meta-input {
+        width: 160px !important;
+    }
+
+    /* Calendar Wrapper for Tablet */
+    .ibt-date-input-wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    /* Custom Calendar Icon */
+    .ibt-custom-calendar-icon-left {
+        position: absolute;
+        left: 8px;
+        width: 17px;
+        height: 17px;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    /* Padding adjustment to avoid text overlap on icon */
+    .ibt-date-field-left {
+        padding-left: 32px !important;
+    }
+
+    /* invoice table section */
+    .it-table-container {
+        overflow-x: hidden;
+    }
+
+    /* Column widths */
+    .it-header-col:nth-child(1),
+    .it-body-col:nth-child(1) {
+        width: 45% !important;
+    }
+
+    .it-header-col:nth-child(2),
+    .it-body-col:nth-child(2) {
+        width: 15% !important;
+    }
+
+    .it-header-col:nth-child(3),
+    .it-body-col:nth-child(3) {
+        width: 20% !important;
+    }
+
+    .it-header-col:nth-child(4),
+    .it-body-col:nth-child(4) {
+        width: 20% !important;
+    }
+
+    .it-header-col {
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+
+    .it-main-input {
+        font-size: 1.1rem;
+    }
+
+    .it-sub-input {
+        font-size: 0.9rem;
+    }
+
+    /* Totals section */
+    .it-total-container {
+        margin-top: 25px;
+    }
+
+    .it-total-box {
+        width: 160px;
+    }
+
+    /* payment info section */
+    .pi-content {
+        padding-left: 20px;
+    }
+
+    .pi-input-label {
+        width: 150px;
+        font-size: 1.2rem;
+    }
+
+    .pi-field {
+        max-width: 350px;
+    }
+
+    /* Error text alignment */
+    .pi-error-margin {
+        margin-left: 150px;
+    }
+
+    .pi-upload-title {
+        font-size: 1.2rem;
+        max-width: 250px;
+    }
+
+    .pi-qr-wrapper {
+        gap: 15px;
+    }
+
+    /* customize your invoice section */
+    .cyi-label-width {
+        width: 250px !important;
+    }
+
+    .cyi-color-field-wrapper {
+        max-width: 300px;
+    }
+
+    .cyi-radio-group {
+        gap: 30px;
+    }
+
+    .cyi-radio-label {
+        font-size: 1.1rem;
+    }
+
+    /* buttons */
+    .ig-action-section {
+        padding: 20px 0;
+    }
+
+    .ig-btn-preview,
+    .ig-btn-generate {
+        font-size: 1.5rem;
+        padding: 10px 30px;
+        min-width: 160px;
+    }
+
+    .ig-action-section .row {
+        gap: 20px;
+    }
+}
+
+/* invoice generator page laptop */
+@media (min-width: 1024px) and (max-width: 1300px) {
+
+    /* invoice bill to section */
+    /* Main Wrapper spacing */
+    .ibt-wrapper {
+        padding: 20px 0;
+    }
+
+    /* Column layout adjustment */
+    .ibt-wrapper .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    /* Section Title (Bill To) */
+    .ibt-section-title {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    /* Left Side (Client Info) */
+    .ibt-client-inputs {
+        max-width: 350px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    /* Right Side (Meta Data: Invoice#, Date) */
+    .ibt-meta-container {
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    /* Meta Row spacing and alignment */
+    .ibt-meta-row-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-bottom: 12px;
+    }
+
+    .ibt-meta-row {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: auto;
+    }
+
+    .ibt-label {
+        min-width: 110px;
+        font-size: 1.1rem;
+        font-weight: 500;
+        text-align: left;
+    }
+
+    .ibt-separator {
+        padding-right: 5px;
+    }
+
+    /* Input box sizing */
+    .ibt-meta-input {
+        width: 200px !important;
+        height: 38px;
+        font-size: 0.95rem;
+    }
+
+    /* Calendar Icon and Input adjustment */
+    .ibt-date-input-wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .ibt-custom-calendar-icon-left {
+        position: absolute;
+        left: 10px;
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+        z-index: 5;
+    }
+
+    /* Specific padding for date field to avoid icon overlap */
+    .ibt-date-field-left {
+        padding-left: 35px !important;
+    }
+
+    /* Error text alignment */
+    .error-text.text-end {
+        font-size: 0.8rem;
+        margin-top: 2px;
+    }
+}
+
+/* invoice preview page mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+
+    /* invoice preview page preview header section */
+    /* Close Button */
+    .ip-close-btn {
+        position: absolute;
+        top: 140px;
+        right: 15px;
+        width: 38px;
+        height: 38px;
+        z-index: 1100;
+    }
+
+    /* Modal Container Gap Adjustment */
+    .ip-modal-container {
+        margin: 190px auto 30px auto;
+        width: 95%;
+        position: relative;
+    }
+
+    /* Header Blue Section */
+    .ph-blue-header {
+        padding: 20px 15px 35px 15px;
+        text-align: center;
+    }
+
+    .ph-blue-header .row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Left Side (Logo & Company Info) Centering */
+    .ph-header-left {
+        flex-direction: column;
+        width: 100% !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .ph-logo-bg {
+        width: 75px;
+        height: 75px;
+        margin-bottom: 10px;
+    }
+
+    .ph-company-info {
+        margin-left: 0 !important;
+    }
+
+    .ph-company-name {
+        font-size: 1.1rem;
+    }
+
+    .ph-company-addr {
+        font-size: 0.85rem;
+    }
+
+    /* Right Side (Invoice Title) Centering */
+    .ph-header-right,
+    .col-4.text-end {
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .ph-title-container {
+        transform: translateY(0);
+    }
+
+    .ph-title {
+        font-size: 1.6rem;
+    }
+
+    /* Green Divider */
+    .ph-green-divider {
+        bottom: 10px;
+        height: 2px;
+    }
+
+    /* preview invoice to section */
+    .pit-wrapper {
+        padding: 20px 15px;
+    }
+
+    .pit-label-title {
+        font-size: 1.3rem;
+        margin-bottom: 12px;
+        text-align: left;
+    }
+
+    .pit-text {
+        font-size: 1.1rem;
+    }
+
+    /* Right Side - Meta Data Section */
+    .pit-meta-container {
+        padding-top: 30px;
+        gap: 8px;
+    }
+
+    .pit-meta-item {
+        font-size: 1.1rem;
+    }
+
+    .pit-meta-label {
+        min-width: 110px;
+    }
+
+    .pit-meta-separator {
+        width: 15px;
+    }
+
+    /* preview table section */
+    .pt-section-wrapper {
+        padding-bottom: 25px;
+    }
+
+    /* Table Padding Adjustments */
+    .pt-text-left {
+        padding-left: 15px !important;
+    }
+
+    .pt-head-bg th {
+        font-size: 0.85rem;
+        padding: 10px 8px;
+    }
+
+    .pt-custom-table td {
+        padding: 10px 8px;
+    }
+
+    .pt-item-title {
+        font-size: 0.95rem;
+    }
+
+    .pt-item-subtitle {
+        font-size: 0.8rem;
+    }
+
+    .pt-val {
+        font-size: 0.9rem;
+    }
+
+    /* Total Section Adjustments */
+    .pt-total-flex-container {
+        margin-top: 15px;
+    }
+
+    .pt-total-label-text {
+        font-size: 1.1rem;
+        padding-right: 15px;
+    }
+
+    .pt-total-amount-box {
+        padding: 10px 25px;
+        min-width: 130px;
+        font-size: 1.1rem;
+    }
+
+    .pt-tax-text {
+        font-size: 0.7rem;
+        padding-right: 8px;
+        margin-top: 5px;
+    }
+
+    /* notes section */
+    .pt-notes-display {
+        padding: 0 15px;
+    }
+
+    .pt-notes-text {
+        font-size: 0.95rem;
+    }
+
+    /* preview footer section payment info */
+    .pv-footer-wrapper {
+        padding: 10px 15px 25px 15px;
+    }
+
+    .pv-payment-title {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+
+    .pv-label {
+        width: 125px;
+        font-size: 0.9rem;
+    }
+
+    .pv-sep {
+        padding: 0 5px;
+    }
+
+    .pv-value {
+        font-size: 0.9rem;
+    }
+
+    /* preview footer section signature section */
+    .pv-signature-container {
+        align-items: center;
+    }
+
+    .pv-sign-line {
+        width: 100%;
+    }
+
+    .pv-ack-text {
+        margin-bottom: 30px;
+    }
+
+    /* preview footer section qr code section */
+    .pv-qr-title {
+        font-size: 1rem;
+    }
+
+    .pv-qr-box {
+        width: 100px;
+        height: 100px;
+    }
+
+    .pv-terms-text {
+        font-size: 0.95rem;
+    }
+
+    /* preview grand design section */
+    .ip-external-design {
+        width: 35px;
+    }
+
+    .grand-flex {
+        align-items: stretch;
+    }
+
+    .ip-grand-card {
+        margin-left: 0;
+        border-left: none !important;
+    }
+}
+
+/* invoice preview page tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    /* invoice preview page preview header section */
+    /* Close Button Adjustment */
+    .ip-close-btn {
+        top: 110px;
+        right: 10px;
+    }
+
+    /* Modal Container Gap Adjustment */
+    .ip-modal-container {
+        margin: 140px auto 40px auto;
+        max-width: 720px;
+        width: 90%;
+    }
+
+    /* Header Blue Section */
+    .ph-blue-header {
+        padding: 25px 20px 35px 20px;
+    }
+
+    /* Logo Size Adjustment */
+    .ph-logo-bg {
+        width: 80px;
+        height: 80px;
+    }
+
+    /* Company Info */
+    .ph-company-name {
+        font-size: 1.3rem;
+    }
+
+    .ph-company-addr {
+        font-size: 1rem;
+    }
+
+    /* Right Side Invoice Title */
+    .ph-title-container {
+        transform: translateY(-20px);
+    }
+
+    .ph-title {
+        font-size: 1.9rem;
+    }
+
+    /* Green Divider */
+    .ph-green-divider {
+        bottom: 11px;
+    }
+
+    /* preview invoice to section */
+    .pit-wrapper {
+        padding: 30px 25px;
+    }
+
+    .pit-label-title {
+        font-size: 1.45rem;
+        margin-bottom: 15px;
+    }
+
+    .pit-text {
+        font-size: 1.2rem;
+    }
+
+    /* Right Side - Meta Data Section */
+    .pit-meta-container {
+        padding-top: 40px;
+        gap: 8px;
+    }
+
+    .pit-meta-item {
+        font-size: 1.2rem;
+    }
+
+    .pit-meta-label {
+        min-width: 120px;
+    }
+
+    /* preview table section */
+    .pt-section-wrapper {
+        padding-bottom: 35px;
+    }
+
+    /* Table Padding Adjustments */
+    .pt-text-left {
+        padding-left: 30px !important;
+    }
+
+    .pt-head-bg th {
+        font-size: 1rem;
+        padding: 12px 10px;
+    }
+
+    .pt-custom-table td {
+        padding: 12px 10px;
+    }
+
+    .pt-item-title {
+        font-size: 1.05rem;
+    }
+
+    .pt-val {
+        font-size: 1rem;
+    }
+
+    /* Total Section Adjustments */
+    .pt-total-flex-container {
+        margin-top: 20px;
+    }
+
+    .pt-total-label-text {
+        font-size: 1.4rem;
+        padding-right: 20px;
+    }
+
+    .pt-total-amount-box {
+        padding: 12px 45px;
+        min-width: 170px;
+        font-size: 1.4rem;
+    }
+
+    .pt-tax-text {
+        font-size: 0.85rem;
+        padding-right: 12px;
+    }
+
+    /* preview footer section payment info */
+    .pv-footer-wrapper {
+        padding: 10px 30px 30px 30px;
+    }
+
+    .pv-payment-title {
+        font-size: 1.2rem;
+    }
+
+    .pv-label {
+        width: 140px;
+        font-size: 1rem;
+    }
+
+    .pv-sep {
+        padding: 0 8px;
+    }
+
+    .pv-value {
+        font-size: 1rem;
+    }
+
+    /* preview footer section signature section */
+    .pv-signature-container {
+        padding-left: 20px;
+    }
+
+    .pv-ack-text {
+        font-size: 1.1rem;
+    }
+
+    .pv-sign-line {
+        width: 90%;
+    }
+
+    /* preview footer section qr code section */
+    .pv-qr-section {
+        margin-top: 15px;
+    }
+
+    .pv-qr-title {
+        font-size: 1.05rem;
+    }
+
+    .pv-qr-box {
+        width: 110px;
+        height: 110px;
+    }
+
+    .pv-terms-section {
+        margin-top: 20px;
+    }
+
+    .pv-terms-head {
+        font-size: 1rem;
+    }
+
+    .pv-terms-text {
+        font-size: 1.05rem;
+    }
+}
+
+/* invoice preview page laptop */
+@media (min-width: 1024px) and (max-width: 1300px) {
+
+    /* invoice preview page preview header section */
+    /* Close Button Adjustment */
+    .ip-close-btn {
+        top: 180px;
+        right: 40px;
+    }
+
+    /* Modal Container Gap Adjustment */
+    .ip-modal-container {
+        margin: 180px auto 50px auto;
+        max-width: 800px;
+        width: 90%;
+    }
+
+    /* Header Spacing Adjustment */
+    .ph-blue-header {
+        padding: 28px 25px 35px 25px;
+    }
+
+    /* Logo Size */
+    .ph-logo-bg {
+        width: 85px;
+        height: 85px;
+    }
+
+    /* Right Side Invoice Title */
+    .ph-title-container {
+        transform: translateY(-25px);
+    }
+
+    .ph-title {
+        font-size: 2rem;
+    }
+
+    .ph-company-name {
+        font-size: 1.4rem;
+    }
+}
+
+/* client invoice page mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+
+    /* Page wrapper */
+    .success-view-layout {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    /* Invoice Container padding */
+    .ci-invoice-container {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    /* Main Card */
+    .ci-white-paper-card {
+        max-width: 95vw;
+        margin: 0 auto;
+        border-width: 1px;
+        overflow-x: auto;
+    }
+
+    /* Grand Design Pattern Adjustment */
+    .ci-external-design {
+        width: 30px;
+        margin-right: -10px;
+    }
+
+    /* Layout wrapper */
+    .ci-layout-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+}
