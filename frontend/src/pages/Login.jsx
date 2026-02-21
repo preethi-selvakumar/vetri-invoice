@@ -54,7 +54,7 @@ const Login = () => {
         else {
             try {
                 // backend login api call
-                const response = await axios.post('http://localhost:5000/api/auth/login', formData);
+                const response = await axios.post('https://vetri-invoice-backend.onrender.com/api/auth/login', formData);
 
                 const { token, user, message } = response.data;
 

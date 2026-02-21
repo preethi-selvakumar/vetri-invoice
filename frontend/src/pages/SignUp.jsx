@@ -47,7 +47,7 @@ const SignUp = () => {
             setErrors(validationErrors);
         } else {
             try {
-                const response = await axios.post('http://localhost:5000/api/auth/register', formData);
+                const response = await axios.post('https://vetri-invoice-backend.onrender.com/api/auth/register', formData);
 
                 alert(response.data.message);
 

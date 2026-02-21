@@ -13,7 +13,7 @@ const PreviewHeader = ({ headerData }) => {
     if (headerData?.logo) {
         if (headerData.logo.startsWith('uploads/')) {
             // Backend URL - ensures no double slashes
-            logoSrc = `http://localhost:5000/${headerData.logo.replace(/^\//, '')}`;
+            logoSrc = `https://vetri-invoice-backend.onrender.com/${headerData.logo.replace(/^\//, '')}`;
             isExternal = true;
         } else {
             logoSrc = headerData.logo;

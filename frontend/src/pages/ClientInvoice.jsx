@@ -26,7 +26,7 @@ const ClientInvoice = () => {
             try {
                 const token = localStorage.getItem('token');
                 const res = await axios.get(
-                    `http://localhost:5000/api/invoices/${id}`,
+                    `https://vetri-invoice-backend.onrender.com/api/invoices/${id}`,
                     { headers: { 'x-auth-token': token } }
                 );
                 setInvoiceData(res.data);
@@ -98,7 +98,7 @@ const ClientInvoice = () => {
 
             const token = localStorage.getItem('token');
             const res = await axios.post(
-                'http://localhost:5000/api/invoices/send-mail',
+                'https://vetri-invoice-backend.onrender.com/api/invoices/send-mail',
                 formData,
                 {
                     headers: {

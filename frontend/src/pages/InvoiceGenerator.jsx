@@ -108,7 +108,7 @@ const InvoiceGenerator = () => {
                     const token = localStorage.getItem('token');
 
                     const res = await axios.post(
-                        'http://localhost:5000/api/invoices/create',
+                        'https://vetri-invoice-backend.onrender.com/api/invoices/create',
                         formData,
                         {
                             headers: {

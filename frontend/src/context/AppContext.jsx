@@ -22,7 +22,7 @@ export const AppProvider = ({ children }) => {
         try {
             const token = localStorage.getItem('token');
             if (!token) return;
-            const res = await axios.get('http://localhost:5000/api/invoices/all', {
+            const res = await axios.get('https://vetri-invoice-backend.onrender.com/api/invoices/all', {
                 headers: { 'x-auth-token': token }
             });
             setAllInvoices(res.data);
@@ -35,7 +35,7 @@ export const AppProvider = ({ children }) => {
         try {
             const token = localStorage.getItem('token');
             if (!token) return;
-            const res = await axios.get('http://localhost:5000/api/clients/all', {
+            const res = await axios.get('https://vetri-invoice-backend.onrender.com/api/clients/all', {
                 headers: { 'x-auth-token': token }
             });
             setClients(res.data);
@@ -49,7 +49,7 @@ export const AppProvider = ({ children }) => {
             const token = localStorage.getItem('token');
             if (!token) return;
 
-            const res = await axios.get('http://localhost:5000/api/invoices/next-number', {
+            const res = await axios.get('https://vetri-invoice-backend.onrender.com/api/invoices/next-number', {
                 headers: { 'x-auth-token': token }
             });
 
@@ -80,7 +80,7 @@ export const AppProvider = ({ children }) => {
     const updateClientPayment = useCallback(async (clientId, amount) => {
         try {
             const token = localStorage.getItem('token');
-            await axios.put(`http://localhost:5000/api/clients/payment/${clientId}`, {
+            await axios.put(`https://vetri-invoice-backend.onrender.com/api/clients/payment/${clientId}`, {
                 receivedAmount: amount
             }, {
                 headers: { 'x-auth-token': token }
@@ -96,7 +96,7 @@ export const AppProvider = ({ children }) => {
     const deleteClient = useCallback(async (id) => {
         try {
             const token = localStorage.getItem('token');
-            await axios.delete(`http://localhost:5000/api/clients/${id}`, {
+            await axios.delete(`https://vetri-invoice-backend.onrender.com/api/clients/${id}`, {
                 headers: { 'x-auth-token': token }
             });
             fetchClients();

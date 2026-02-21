@@ -28,7 +28,7 @@ app.use(cors({
 // These headers are very important to capture images using html2canvas
 app.use('/uploads', express.static(path.join(__dirname, 'uploads'), {
     setHeaders: (res) => {
-        res.set('Access-Control-Allow-Origin', 'http://localhost:5173');
+        res.set('Access-Control-Allow-Origin', '*');
         res.set('Access-Control-Allow-Methods', 'GET, OPTIONS');
         res.set('Access-Control-Allow-Headers', 'Content-Type');
     }

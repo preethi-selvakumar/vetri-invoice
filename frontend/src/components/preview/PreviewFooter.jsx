@@ -14,7 +14,7 @@ const PreviewFooter = ({ paymentInfo, notesSettings, headerData }) => {
 
     if (paymentInfo?.qrCodeImage) {
         if (paymentInfo.qrCodeImage.startsWith('uploads/')) {
-            qrSrc = `http://localhost:5000/${paymentInfo.qrCodeImage}`;
+            qrSrc = `https://vetri-invoice-backend.onrender.com/${paymentInfo.qrCodeImage}`;
             isExternal = true; // Mark as external image if it is a backend URL
         } else {
             qrSrc = paymentInfo.qrCodeImage;
